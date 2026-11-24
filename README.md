@@ -1,4 +1,4 @@
-# Experiment 1.A  Employee Data Display Using Python
+# DSWP-Experiment-1.A-Employee-Data-Display-Using-Python
 
 ## Aim
 
@@ -27,11 +27,68 @@ To collect employee details, validate inputs, and calculate gross and net salary
 9. **Stop** the program.
 
 ## Program
+## Input 
+```
+# Employee Payroll Calculation
 
+# Get employee details
+name = input("Enter Employee Name: ")
+
+emp_id = input("Enter Employee ID: ")
+
+basic = float(input("Enter Basic Pay: "))
+
+# Calculate allowances
+hra = 0.15 * basic
+
+da = 0.10 * basic
+
+# Calculate gross salary
+gross = basic + hra + da
+
+# Calculate tax
+tax = 0.08 * gross
+
+# Calculate net salary
+net = gross - tax
+
+# Display employee salary report
+print("\n--- Employee Salary Report ---")
+
+print(f"Employee Name: {name}")
+
+print(f"Employee ID: {emp_id}")
+
+print(f"Basic Pay: {basic}")
+
+print(f"HRA: {hra}")
+
+print(f"DA: {da}")
+
+print(f"Gross Salary: {gross}")
+
+print(f"Tax Deducted: {tax}")
+
+print(f"Net Salary: {net}")
+```
 
 ## Output
+```
+Enter Employee Name: Santhosh M
+Enter Employee ID: 212225410118
+Enter Basic Pay: 200000
 
+--- Employee Salary Report ---
+Employee Name: Nagaraj S
+Employee ID: 212225410118
+Basic Pay: 200000.0
+HRA: 15000.0
+DA: 10000.0
+Gross Salary: 225000.0
+Tax Deducted: 10000.0
+Net Salary: 215000.0
+```
 
-## ✅ Result
+## Result
 
 The program successfully accepts and validates employee details, calculates allowances and deductions, and displays a well-formatted salary report.
